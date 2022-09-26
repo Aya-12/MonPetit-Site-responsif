@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: url('./images/woman.1');
+    /* background-position: center; */
+    background-size: 250vh;
+    height: 57vh;
+    color: aliceblue;
+    text-align: center;
+}
+
+header nav{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+header nav a{
+    color: rgb(148, 143, 138);
+    text-decoration: none;
+    margin-right: 10px;
+    
+    
+}
+
+header nav a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+
+}
+
+header .principal{
+    margin-top: 50px ;
+}
+
+header .principal h4{
+    padding: 20px;
+    
+}
+
+.presentation{
+    background:rgb(192, 157, 60);
+    color:cornsilk;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation .gauche{
+    width: 60%;
+    margin-right: 60px;
+}
+
+
+.service{
+    padding: 30px;
+    background: url(./images/under.png);
+    background-size: 250vh;
+    height: 88vh;
+    /* margin-top: 30px; */
+    color: aliceblue;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.service h1,
+.service p {
+    text-align: center;
+    
+}
+
+.service p{
+    margin-bottom: 30px;
+}
+
+
+.service .mes-images{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+   
+
+}
+
+.service .mes-images .carte{
+    background:rgb(64, 4, 92) ;
+    /* padding: 10px;
+    margin-bottom: px; */
+}
+
+.service .mes-images .carte, img{
+
+    /* margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    width: 40vh;
+    
+}
+
+.partenair{
+    padding-top: 20px;
+    background-color: rgb(121, 60, 20);
+    padding-bottom: 30px;
+}
+
+.partenair h1{
+    text-align: center;
+}
+
+.partenair .partenaires-images{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -30px;
+    overflow-x: auto;
+    
+}
+
+.partenair .partenaires-images p img{
+    height: 70px;
+}
+
+.partenair .partenaires-images p{
+    margin-right: -40px;
+}
+
+footer{
+    background: rgb(48, 36, 36);
+    padding: 30px;
+    color: cornsilk;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .medias{
+    display: flex;
+}
+
+footer .medias p{
+    margin-right: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 810px){
+    .presentation .gauche{
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .presentation .droite{
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header{
+        
+        background-size: 125vh;
+    }
+
+    .service{
+        height: 128vh
+    }
+}
